@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="27" height="15" tilewidth="70" tileheight="70" infinite="0" nextlayerid="3" nextobjectid="35">
+ <tileset firstgid="1" name="bulkhead-wallsx1" tilewidth="70" tileheight="70" spacing="2" tilecount="12" columns="4">
+  <image source="../../../../../../../Desktop/tiled/bulkhead-wallsx1.png" width="352" height="224"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="27" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,
+5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,8,5,6,7,
+9,10,11,12,9,10,11,12,9,10,11,12,9,10,11,12,9,10,11,12,9,10,11,12,9,10,11
+</data>
+ </layer>
+ <objectgroup id="2" name="Object Layer 1" offsetx="5.9969" offsety="-1.49923">
+  <object id="2" type="platform" x="-1.18983" y="1017.3" width="1889.44" height="32.1253"/>
+  <object id="20" type="platform" x="66.6302" y="930.444" width="30.9355" height="85.6675"/>
+  <object id="21" type="platform" x="239.155" y="930.444" width="30.9355" height="85.6675"/>
+  <object id="22" type="platform" x="346.239" y="930.444" width="30.9355" height="85.6675"/>
+  <object id="23" type="platform" x="517.574" y="930.444" width="30.9355" height="85.6675"/>
+  <object id="24" type="platform" x="625.848" y="930.444" width="30.9355" height="85.6675"/>
+  <object id="25" type="platform" x="795.993" y="929.254" width="30.9355" height="85.6675"/>
+  <object id="26" type="platform" x="904.268" y="929.254" width="30.9355" height="85.6675"/>
+  <object id="27" type="platform" x="1077.98" y="931.634" width="30.9355" height="85.6675"/>
+  <object id="28" type="platform" x="1186.26" y="929.254" width="30.9355" height="85.6675"/>
+  <object id="29" type="platform" x="1358.78" y="929.254" width="30.9355" height="85.6675"/>
+  <object id="30" type="platform" x="1464.68" y="928.064" width="30.9355" height="85.6675"/>
+  <object id="31" type="platform" x="1639.58" y="929.254" width="30.9355" height="85.6675"/>
+  <object id="32" type="platform" x="1745.47" y="929.254" width="30.9355" height="85.6675"/>
+  <object id="33" type="tool" x="1330.67" y="768.833" width="69.3333" height="71.3333"/>
+  <object id="34" type="door" x="1678" y="769.499" width="68" height="72"/>
+ </objectgroup>
+</map>
