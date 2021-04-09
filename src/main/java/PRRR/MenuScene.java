@@ -34,6 +34,20 @@ public class MenuScene extends FXGLMenu {
         titleLabel.setLayoutY(120);
 
         //BUTTONS
+        Button namePanel = new JPanel("What's your name?");
+
+        namePanel.setMinWidth(100);
+        namePanel.setMaxWidth(400);
+        namePanel.setPrefWidth(200);
+
+        namePanel.setMinHeight(15);
+        namePanel.setMaxHeight(50);
+        namePanel.setPrefHeight(50);
+
+        namePanel.setLayoutX(290);
+        namePanel.setLayoutY(200);
+
+        //BUTTONS
         Button startButton = new Button("Start game");
 
         startButton.setMinWidth(100);
@@ -116,7 +130,7 @@ public class MenuScene extends FXGLMenu {
         bg.setFill(Color.BEIGE);
 
         //DRAW EVERYTHING
-        getContentRoot().getChildren().addAll(bg, titleLabel, startButton, highscoreLabel, table, dialogueButton);
+        getContentRoot().getChildren().addAll(bg, titleLabel, namePanel, startButton, highscoreLabel, table, dialogueButton);
 
 
 
