@@ -2,8 +2,10 @@ package PRRR;
 
 import com.almasb.fxgl.app.scene.FXGLMenu;
 import com.almasb.fxgl.app.scene.MenuType;
+import com.almasb.fxgl.dsl.FXGL;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
@@ -33,19 +35,13 @@ public class MenuScene extends FXGLMenu {
         titleLabel.setLayoutX(290);
         titleLabel.setLayoutY(120);
 
-        //BUTTONS
-        Button namePanel = new JPanel("What's your name?");
-
-        namePanel.setMinWidth(100);
-        namePanel.setMaxWidth(400);
-        namePanel.setPrefWidth(200);
-
-        namePanel.setMinHeight(15);
-        namePanel.setMaxHeight(50);
-        namePanel.setPrefHeight(50);
-
-        namePanel.setLayoutX(290);
-        namePanel.setLayoutY(200);
+        //NAMEBOX
+        VBox playerNameBox = new VBox(80);
+           playerNameBox.setSpacing(40);
+           playerNameBox.setAlignment(Pos.CENTER);
+        TextField input = new TextField();
+        playerNameBox.getChildren().add(input);
+        FXGL.getGameScene().addUINode(playerNameBox);
 
         //BUTTONS
         Button startButton = new Button("Start game");
@@ -130,7 +126,7 @@ public class MenuScene extends FXGLMenu {
         bg.setFill(Color.BEIGE);
 
         //DRAW EVERYTHING
-        getContentRoot().getChildren().addAll(bg, titleLabel, namePanel, startButton, highscoreLabel, table, dialogueButton);
+        getContentRoot().getChildren().addAll(bg, playerNameBox, titleLabel, startButton, highscoreLabel, table, dialogueButton);
 
 
 

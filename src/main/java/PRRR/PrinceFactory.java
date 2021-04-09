@@ -26,7 +26,7 @@ public class PrinceFactory implements EntityFactory {
         return FXGL.entityBuilder(data)
                 .type(EntityTypes.TOOLS)
                 .viewWithBBox("test.png")
-                .with(new CollidableComponent(true)).with(new PhysicsComponent())
+                .with(new CollidableComponent(true))
                 .build();
     }
 
