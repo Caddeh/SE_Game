@@ -19,13 +19,30 @@ public class PrinceFactory implements EntityFactory {
         return new Entity();
     }
 
+    @Spawns("tool")
+    public Entity newTool(SpawnData data) {
+        return FXGL.entityBuilder(data)
+                .type(EntityTypes.TOOLS)
+                .viewWithBBox("test.png")
+                .with(new CollidableComponent(true)).with(new PhysicsComponent())
+                .build();
+    }
+
+    @Spawns("door")
+    public Entity newDoor(SpawnData data) {
+        return FXGL.entityBuilder(data)
+                .type(EntityTypes.DOOR)
+                .viewWithBBox("test2.png")
+                .with(new CollidableComponent(true))
+                .build();
+    }
+
     @Spawns("player")
     public Entity newPlayer(SpawnData data) {
         PhysicsComponent physics = new PhysicsComponent();
         physics.setBodyType(BodyType.DYNAMIC);
 
         return FXGL.entityBuilder()
-                .at(500, 540)
                 .type(EntityTypes.PLAYER)
                 .viewWithBBox("player.png")
                 .with(new CollidableComponent(true)).with(physics)

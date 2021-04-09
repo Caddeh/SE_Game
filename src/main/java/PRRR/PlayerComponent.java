@@ -16,7 +16,6 @@ public class PlayerComponent extends Component {
 
     @Override
     public void onUpdate(double tpf) {
-
     }
 
     public void left() {
@@ -30,7 +29,7 @@ public class PlayerComponent extends Component {
     }
 
     public void stop() {
-        physics.setVelocityX(0);
+        physics.setVelocityX(1);
     }
 
     public void jump() {
