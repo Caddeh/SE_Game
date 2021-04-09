@@ -20,7 +20,8 @@ import static com.sun.media.jfxmedia.logging.Logger.setLevel;
 public class PrinceGame extends GameApplication {
 
     private Entity player;
-    private static final int MAX_LEVEL = 3;
+    private PhysicsComponent physics;
+    private static final int MAX_LEVEL = 2;
     private static final int STARTING_LEVEL = 0;
 
     @Override
@@ -51,7 +52,7 @@ public class PrinceGame extends GameApplication {
 
     private void nextLevel() {
         if (geti("level") == MAX_LEVEL) {
-            showMessage("Pure Kanker");
+            showMessage("Congratulations !!");
             return;
         }
 
@@ -63,6 +64,7 @@ public class PrinceGame extends GameApplication {
     private void setLevel(int levelNum) {
         if (player != null) {
             player.getComponent(PhysicsComponent.class).overwritePosition(new Point2D(50, 50));
+            player.setZIndex(Integer.MAX_VALUE);
             }
 
         Level level = FXGL.setLevelFromMap("level" + levelNum + ".tmx");
